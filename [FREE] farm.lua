@@ -1,14 +1,3 @@
-_G.script = true
-
-
-
-        spawn(function()
-            game:GetService('RunService').RenderStepped:connect(function()
-                pcall(function()
-                    if _G.script then
-                       
-                            
-
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/helloDelvuss/NIGGARTX/main/EZRTX",true))();
 
@@ -562,10 +551,10 @@ end)
 end)
                         
                         
-                    end
-                end)
-            end)
-        end)
+                    
+                
+            
+        
 
 
 
