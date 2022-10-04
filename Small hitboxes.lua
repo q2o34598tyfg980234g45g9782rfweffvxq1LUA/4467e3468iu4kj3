@@ -1,5 +1,5 @@
 getfenv().hbeS = true
-    if getfenv().hbe == true then
+    if getfenv().hbeS == true then
     local mt = getrawmetatable(game);
     make_writeable(mt);
     local old_index = mt.__index;
