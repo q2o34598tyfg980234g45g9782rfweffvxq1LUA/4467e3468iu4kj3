@@ -1,4 +1,4 @@
-getfenv().hbeS = true
+getfenv().hbe = true
     if getfenv().hbe == true then
     local mt = getrawmetatable(game);
     make_writeable(mt);
@@ -387,6 +387,6 @@ getfenv().hbeS = true
     
     Settings.INST.FillColor = Color3.fromRGB(222, 2, 222);
     Settings.TARGET.OutlineColor = Color3.fromRGB(111, 11, 111);
-    elseif getfenv().hbeS == false then
+    elseif getfenv().hbe == false then
         print('disabled hbe')
     end
