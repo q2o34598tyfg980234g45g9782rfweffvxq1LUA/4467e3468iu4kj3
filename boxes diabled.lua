@@ -14,7 +14,7 @@ getfenv().hbe = true
     end
     
     
-    if shared.ShushHighlight then shared.ShushHighlight.stop();end;
+    
     
     local Connection = {};
     Connection.__index = Connection;
@@ -85,28 +85,7 @@ getfenv().hbe = true
     
     local SettingsProxy = {Target = true};
     
-    local INSTProxy = {
-        FillColor = Color3.new(0, 1, 0),
-        FillTransparency = 0.5,
-    
-        OutlineColor = Color3.new(1, 1, 1),
-        OutlineTransparency = 0;
-    };
-    local TARGETProxy = {
-        FillColor = Color3.new(1, 0, 0),
-        FillTransparency = 0.5,
-    
-        OutlineColor = Color3.new(1, 1, 1),
-        OutlineTransparency = 0;
-    };
-    local HITBOXProxy = {
-        Size = Vector3.new(0,0,0),
-        Transparency = 0
-    };
-    local TARGETHITBOXProxy = {
-        Size = Vector3.new(0,0,0),
-        Transparency = 0
-    };
+
     
     local Settings = setmetatable({}, {__index = SettingsProxy, __newindex = function(self, key, value)
         if key == "Target" then 
