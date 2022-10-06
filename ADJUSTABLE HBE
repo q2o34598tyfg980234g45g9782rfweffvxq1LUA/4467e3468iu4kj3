@@ -1,0 +1,64 @@
+ _G.Toggle2 = false
+
+
+
+                    spawn(function()
+
+                        game:GetService('RunService').RenderStepped:connect(function()
+                    
+                            pcall(function()
+                    
+                                if _G.Toggle2 then
+                    
+                                    for i, v in pairs(game:GetService("Workspace").KnifeHost:GetDescendants()) do
+                    
+                                        if v:IsA("Part") then
+                    
+                                            if v.Archivable == true then
+                    
+                                                local PlayerPosition = ClosestPlayerToCursor().baseHitbox.CFrame
+                    
+                                                v.CFrame = PlayerPosition
+                    
+                                            end
+                    
+                                        end
+                    
+                                    end
+                    
+                                end
+                    
+                            end)
+                    
+                        end)
+                    
+                    end)
+
+
+spawn(function()
+
+    game:GetService('RunService').RenderStepped:connect(function()
+
+for i,v in pairs(game:GetService('Players'):GetPlayers()) do
+
+    if v.Name ~= game.Players.LocalPlayer.Name then
+
+game.Workspace[v.Name].HumanoidRootPart.Size = SizeXCV
+
+game.Workspace[v.Name].HumanoidRootPart.Transparency = TransparencyXCV or SizeXCVs
+
+
+
+game.Workspace[v.Name].HumanoidRootPart.Material = "Neon"
+
+game.Workspace[v.Name].HumanoidRootPart.CanCollide = false
+
+wait()
+
+end
+
+end
+
+end)
+
+end)
