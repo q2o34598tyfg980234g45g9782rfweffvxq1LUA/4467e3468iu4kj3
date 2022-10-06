@@ -1,4 +1,5 @@
- _G.Toggle2 = false
+  
+   _G.Toggle2 = false
 
 
 
@@ -47,6 +48,7 @@ game.Workspace[v.Name].HumanoidRootPart.Size = SizeXCV
 
 game.Workspace[v.Name].HumanoidRootPart.Transparency = TransparencyXCV or SizeXCVs
 
+game.Workspace[v.Name].HumanoidRootPart.Color = collar
 
 
 game.Workspace[v.Name].HumanoidRootPart.Material = "Neon"
