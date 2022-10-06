@@ -1,4 +1,4 @@
- getfenv().hbe = true
+getfenv().hbe = true
     if getfenv().hbe == true then
     local mt = getrawmetatable(game);
     make_writeable(mt);
@@ -87,14 +87,14 @@
     
     local INSTProxy = {
         FillColor = Color3.new(0, 1, 0),
-        FillTransparency = 0,
+        FillTransparency = 0.5,
     
         OutlineColor = Color3.new(1, 1, 1),
         OutlineTransparency = 0;
     };
     local TARGETProxy = {
         FillColor = Color3.new(1, 0, 0),
-        FillTransparency = 0,
+        FillTransparency = 0.5,
     
         OutlineColor = Color3.new(1, 1, 1),
         OutlineTransparency = 0;
@@ -380,12 +380,12 @@
     shared.ShushHighlight = Highlight;
     local Settings = shared.ShushHighlight.Settings;
     
-    Settings.HITBOX.Size = Vector3.new(10,10,10);
-    Settings.HITBOX.Transparency = 1;
-    Settings.TARGETHITBOX.Size = Vector3.new(25,25,25);
-    Settings.TARGETHITBOX.Transparency = 1;
+    Settings.HITBOX.Size = Vector3.new(20,20,20);
+    Settings.HITBOX.Transparency = 0.5;
+    Settings.TARGETHITBOX.Size = Vector3.new(30,30,30);
+    Settings.TARGETHITBOX.Transparency = 0.5;
     
-    Settings.INST.FillColor = Color3.fromRGB(0, 255, 0);
+    Settings.INST.FillColor = Color3.fromRGB(222, 2, 222);
     Settings.TARGET.OutlineColor = Color3.fromRGB(111, 11, 111);
     elseif getfenv().hbe == false then
         print('disabled hbe')
