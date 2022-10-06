@@ -4,7 +4,7 @@ local Player = game:GetService("Players").LocalPlayer
         
         FOV_Circle = Drawing.new("Circle")
      
-        FOV_Circle.Color = Color3.fromRGB(255,255,255)
+        FOV_Circle.Color =  c    --Color3.fromRGB(255,255,255)
         FOV_Circle.Thickness = 2.5
        FOV_Circle.NumSides = 12
       FOV_Circle.Radius = 75
