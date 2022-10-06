@@ -44,7 +44,7 @@ for i,v in pairs(game:GetService('Players'):GetPlayers()) do
 
     if v.Name ~= game.Players.LocalPlayer.Name then
 
-game.Workspace[v.Name].HumanoidRootPart.Size = SizeXCV
+game.Workspace[v.Name].HumanoidRootPart.Size = LUNRsize
 
 game.Workspace[v.Name].HumanoidRootPart.Transparency = TransparencyXCV or SizeXCVs
 
